@@ -1,0 +1,24 @@
+<html>
+<head>
+	<script type="text/javascript" src="complex.js"></script>
+	<script type="text/javascript" src="linkedlist.js"></script>
+	<script type="text/javascript" src="grapher.js"></script>
+	<script type="text/javascript" src="parser.js"></script>
+</head>
+
+<body>
+	<center>
+		<p><canvas id="canvas" width="500" height="500" style="border:1px dotted #000000;"></canvas></p>
+		<p id="p_err">&nbsp;</p>
+		<form name="params">
+			<b>Window</b><br />
+			Horizontal: <input type="text" name="param1" style="font-weight:bold; width:50px" value="-10" /> to <input type="text" name="param2" style="font-weight:bold; width:50px" value="10" /><br />
+			Vertical: <input type="text" name="param3" style="font-weight:bold; width:50px" value="-10" /> to <input type="text" name="param4" style="font-weight:bold; width:50px" value="10" />
+		</form>
+		<form name="inform">
+				<input type="text" name="poly" style="font-weight:bold; font-size:150%;" value="z^3 - 1" />
+				<input type="button" value="Polynomiograph!" onClick="graph();" style="font-weight:bold; font-size:150%;" />
+		</form>
+	</center>
+</body>
+</html>
